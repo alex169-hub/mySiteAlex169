@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&display=swap" rel="stylesheet');
+/* шрифт из внешнего источника */
+
+html,
+body {
+    height: 100%;
+}
+
+.greetings,
+p, 
+h2 {
+    font-family: 'Noto Serif JP', serif;
+}
+/* применение шрифта к заголовку 2 ур. и параграфам */
+
+@font-face {
+    /* название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) */
+    font-family: 'Beer money'; 
+    /* адрес шрифта и тип */
+    src: url("fonts/beermoney.woff2") format('woff2'),
+    url("fonts/beermoney.woff") format('woff'),
+    url("fonts/beermoney.ttf") format('ttf'); 
+    font-style: 400; 
+    font-weight: normal; 
+    } 
+
+    h1 {
+        font-family: 'Beer money';
+    }
+/* применение шрифта к заголовку 1ур. */
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: #e9f5da;
+    padding: 0px;
+    height: 185%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 10%;
+    margin-bottom: 1em;
+    background-color: #cef8f6;
+}
+
+ul  {
+    display: flex;
+    list-style-type: none;
+}
+
+ul li {
+    margin-right: 20px;
+}
+
+li a {
+    text-decoration: none;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 1.4rem;
+    color: #ec2c0a;
+    font-weight: 850;
+}
+
+.logo img {
+    width: 55px;
+    height: 55px;
+    margin-left: 85px;
+}
+
+.about_me {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+}
+
+.data {
+    display: flex;
+    align-items: center;
+}
+
+.fullname {
+    margin-right: 100px;
+    flex-basis: 500px;
+}
+
+.myImg {
+    margin-top: 50px;
+    padding-left: 10px;
+    flex-basis: 30px;
+    
+}
+
+.knowledge {
+    display: flex;   
+    /*text-align:center;*/
+    padding: 30px;
+}
+
+.article {
+    margin-top: 2em;   
+}
+
+
+p {
+    font-size: 1.2rem;
+    color: #4313b3;
+    padding: 30px;
+    
+}
+
+.text {
+    font-size: 1rem;
+    color: #4313b3;
+    text-align:center;
+}
+
+h2 {
+    text-align: center;
+    color: #dcf7ba;
+}
+
+h1 {
+    color: #4313b3;
+    text-align: center;
+    font-size: 2.3rem;
+}
+
+.footer {
+    background-color: #4313b3;
+    flex: 0 0 auto;
+    
+}
